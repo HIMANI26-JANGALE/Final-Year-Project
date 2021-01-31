@@ -1,23 +1,4 @@
 
-body{
-    font-family: sans-serif;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRRwG6zE_GdWL0j8JfHB4RrkO9m7ggteM45czo-lNNbgrYIFAva&usqp=CAU");
-    background-size: cover ;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  
-}
-input:invalid{
-    border:1px solid rgb(238, 73, 73);
-}
-input:valid{
-    border:2px solid rgb(123, 240, 7);
-}
-
-
-
-
 .login-box{
     position: absolute;
     left:50%;
@@ -28,6 +9,9 @@ input:valid{
     box-sizing:border-box;
     transform: translate(-50%,-50%);
     padding: 90px 39px;
+}
+.glyphicon{
+    color: orange;
 }
  .upper-box{
     position: absolute;
@@ -126,18 +110,18 @@ input:valid{
 }
 .login-box input[type="text"]:hover{
     opacity:0.8;
-    color:black;
-    background-color:rgb(202, 116, 45);
+    color:white;
+    
 }
 .login-box input[type="password"]:hover{
     opacity:0.8;
-    color:black;
-    background-color:rgb(202, 116, 45);
+    color:white;
+    
 }
 .login-box input[type="email"]:hover{
     opacity:0.8;
-    color:black;
-    background-color:rgb(202, 116, 45);
+    color:white;
+    
 }
 
 
@@ -192,3 +176,22 @@ h2:hover{
     transform: scale(0.8);
     transition: 1s ease;
 }
+.account{
+    color: black;
+}
+#footer-register
+{
+   margin-top: 10px;
+	background:#f8f9fd;
+	padding:20px 10px 8px;
+}
+#footer-register p
+{
+	color:#333;
+}
+#footer-register a img
+{
+	width:300px;
+}
+
+
