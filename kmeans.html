@@ -1,0 +1,88 @@
+<html>
+<head>
+    <link rel="stylesheet" href="kmeans.css">
+
+    <script type="text/javascript">
+      function goToNewPage()
+      {
+          var url = document.getElementById('list').value;
+          if(url != 'none') {
+              window.location = url;
+          }
+      }
+  </script>
+</head>
+<body>
+  <body background="p1.jpg">
+<h1><u>Incremental K-means Clustering algorithm </u></h1>
+<b>
+<p>         Incremental K-means clustering is a type of unsupervised learning, which is used when you have unlabeled data (i.e., data without defined categories or groups). The goal of this algorithm is to find groups in the data, with the number of groups represented by the variable K. The algorithm works iteratively to assign each data point to one of K groups based on the features that are provided. Data points are clustered based on feature similarity.
+    The results of this clustering algorithm are:
+</p>
+<ul><b>
+<li>The centroids of the K clusters, which can be used to label new data</li>
+<li>Labels for the training data (each data point is assigned to a single cluster)</li>
+</b>
+</ul>
+  
+<p>      Incremental Kmeans algorithm is an iterative algorithm that tries to partition the dataset into Kpre-defined distinct non-overlapping subgroups (clusters) where each data point belongs to only one group.
+It tries to make the intra-cluster data points as similar as possible while also keeping the clusters as different (far) as possible. It assigns data points to a cluster such that the sum of the squared distance between the data points and the cluster’s centroid (arithmetic mean of all the data points that belong to that cluster) is at the minimum. The less variation we have within clusters,the more homogeneous (similar) the data points are within the same cluster.</p>
+</b>
+<h1><u>Applications  :</u></h1>
+<ul><b>
+    <li>Market Segmentation</li>
+    <li>document clustering</li>
+    <li>image segmentation and image compression</li>
+    <li>Get a meaningful intuition of the structure of the data we’re dealing with.</li>
+    <li>Cluster-then-predict where different models will be built for different subgroups if we believe there is a wide variation in the behaviors of different subgroups. <br>An example of that is clustering patients into different subgroups and build a model for each subgroup to predict the probability of the risk of having heart attack.</li>
+    </b>
+  </ul>
+<center>
+  
+  </style>
+  </head>
+  <body>
+    </head>
+    <h3><b>Select the value of cluters to see the output</b></h3>
+    <body>
+      <form>
+        <select name="list" id="list" accesskey="target">
+            <option value='none' selected>Number of cluster</option>
+            <option value="output.html">1</option>
+            <option value="output2.html">2</option>
+            <option value="output3.html">3</option>
+        </select>
+
+        
+        <input type=button class="button button2"value="Go" onclick="goToNewPage()" />
+        </form>
+      <button class="button button1" onclick="myclick()">Execution Time</button>
+      <script>
+        function myclick(){
+          document.location.href="execution.html";
+        }
+      </script>
+      <style>
+        .button {
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        } 
+        .button1 {width: 250px;}
+        .button2 {border-radius: 4px;}
+        .button1 {background-color: #4CAF50;} /* Green */
+        .button2 {background-color: #008CBA;} /* Blue */
+        </style>
+        </head>
+        
+    </center>   
+    
+      
+</body>
+</html>

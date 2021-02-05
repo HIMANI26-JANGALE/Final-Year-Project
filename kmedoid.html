@@ -1,0 +1,77 @@
+<html>
+<head>
+    <link rel="stylesheet" href="kmedoid.css">
+
+    <script type="text/javascript">
+      function goToNewPage()
+      {
+          var url = document.getElementById('list').value;
+          if(url != 'none') {
+              window.location = url;
+          }
+      }
+  </script>
+</head>
+<body>
+  <body background="p1.jpg">
+<h1><u>K-Medoids Clustering algorithm </u></h1>
+<b>
+<p>       K-Medoids (also called as Partitioning Around Medoid) algorithm was proposed in 1987 by Kaufman and Rousseeuw. A medoid can be defined as the point in the cluster, whose dissimilarities with all the other points in the cluster is minimum.The k-medoids algorithm is a clustering approach related to k-means clustering for partitioning a data set into k groups or clusters. In k-medoids clustering, each cluster is represented by one of the data point in the cluster. These points are named cluster medoids.
+</p>
+<p>The term medoid refers to an object within a cluster for which average dissimilarity between it and all the other the members of the cluster is minimal. It corresponds to the most centrally located point in the cluster. </p>
+<p>K-medoid is a robust alternative to k-means clustering. This means that, the algorithm is less sensitive to noise and outliers, compared to k-means, because it uses medoids as cluster centers instead of means (used in k-means).The k-medoids algorithm requires the user to specify k, the number of clusters to be generated</p>
+<h3>Uses of k medoids algorithm</h3>
+<ul>
+    <b>
+        <li>It is simple to understand and easy to implement.</li>
+        <li>K-Medoid Algorithm is fast and converges in a fixed number of steps.</li>
+    </b>
+</ul>
+<center>
+  
+  </style>
+  </head>
+  <body>
+    </head>
+    <h3><b>Select the value of cluters to see the output</b></h3>
+    <body>
+      <form>
+        <select name="list" id="list" accesskey="target">
+            <option value='none' selected>Number of cluster</option>
+            <option value="k1.html">1</option>
+            <option value="k2.html">2</option>
+            <option value="k3.html">3</option>
+        </select>
+        <input type=button class="button button2"value="Go" onclick="goToNewPage()" />
+        </form>
+      <button class="button button1" onclick="myclick()">Execution Time</button>
+      <script>
+        function myclick(){
+          document.location.href="exe medoid.html";
+        }
+      </script>
+      <style>
+        .button {
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        } 
+        .button1 {width: 250px;}
+        .button2 {border-radius: 4px;}
+        .button1 {background-color: #4CAF50;} /* Green */
+        .button2 {background-color: #008CBA;} /* Blue */
+        </style>
+        </head>
+        
+    </center>    
+  
+    
+      
+</body>
+</html>
