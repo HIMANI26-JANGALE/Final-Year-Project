@@ -1,0 +1,85 @@
+<html>
+<head>
+    <link rel="stylesheet" href="hierarchical.css">
+
+    <script type="text/javascript">
+      function goToNewPage()
+      {
+          var url = document.getElementById('list').value;
+          if(url != 'none') {
+              window.location = url;
+          }
+      }
+  </script>
+</head>
+<body>
+  <body background="p1.jpg">
+<h1><u>Hierarchical Clustering algorithm </u></h1>
+<b>
+<p>       Hierarchical clustering, also known as hierarchical cluster analysis, is an algorithm that groups similar objects into groups called clusters. The endpoint is a set of clusters, where each cluster is distinct from each other cluster, and the objects within each cluster are broadly similar to each other.
+</p>
+<p>Hierarchical clustering can be performed with either a distance matrix or raw data. When raw data is provided, the software will automatically compute a distance matrix in the background. The distance matrix below shows the distance between six objects.</p>
+<h3>Finding hierarchical clusters</h3>
+<p>There are two top-level methods for finding these hierarchical clusters:</p>
+<ul>
+    <b>
+        <li>Agglomerative clustering uses a bottom-up approach, wherein each data point starts in its own cluster. These clusters are then joined greedily, by taking the two most similar clusters together and merging them.</li>
+    <li>Divisive clustering uses a top-down approach, wherein all data points start in the same cluster. You can then use a parametric clustering algorithm like K-Means to divide the cluster into two clusters. For each cluster, you further divide it down to two clusters until you hit the desired number of clusters.</li>
+    </b>
+</ul>
+<h3>Applications of Hierarchical Clustering</h3>
+<ul>
+    <b>
+        <li>US Senator Clustering through Twitter</li>
+        <li>Charting Evolution through Phylogenetic Trees</li>
+        <li>Tracking Viruses through Phylogenetic Trees</li>
+    </b>
+</ul>
+<center>
+  
+  </style>
+  </head>
+  <body>
+    </head>
+    <h3><b>Select the value of cluters to see the output</b></h3>
+    <body>
+      <form>
+        <select name="list" id="list" accesskey="target">
+            <option value='none' selected>Number of cluster</option>
+            <option value="h1.html">1</option>
+            <option value="h2.html">2</option>
+            <option value="h3.html">3</option>
+        </select>
+        <input type=button class="button button2"value="Go" onclick="goToNewPage()" />
+        </form>
+      <button class="button button1" onclick="myclick()">Execution Time</button>
+      <script>
+        function myclick(){
+          document.location.href="exe h.html";
+        }
+      </script>
+      <style>
+        .button {
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        } 
+        .button1 {width: 250px;}
+        .button2 {border-radius: 4px;}
+        .button1 {background-color: #4CAF50;} /* Green */
+        .button2 {background-color: #008CBA;} /* Blue */
+        </style>
+        </head>
+        
+    </center>    
+  
+    
+      
+</body>
+</html>
