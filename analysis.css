@@ -1,17 +1,17 @@
-.finalgraph{
+.analysis{
+    left: 20%;
     position: absolute;
-    top:13px;
-    left: 280px;
+}
+.finalgraph{
+    margin-top: 90px;
 }
 .info{
-    position: absolute;
-    top:600px;
-    left:230px;
+    
+    
     font-size: px;
-        width: 700px;
-        border: 5px solid rgb(128, 0, 0);
-        padding: 30px;
-        margin: 20px;
-        background-color:rgb(166, 235, 236);
+    width: 700px;
+    border: 5px solid rgb(128, 0, 0);
+    padding: 30px;
+    background-color:rgb(166, 235, 236);
       
 }
