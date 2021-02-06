@@ -154,7 +154,7 @@ span.psw {
 .valid:before {
   position: relative;
   left: -35px;
-  content: "âœ”";
+  content: "✔";
 }
 
 /* Add a red text color and an "x" when the requirements are wrong */
@@ -165,7 +165,7 @@ span.psw {
 .invalid:before {
   position: relative;
   left: -35px;
-  content: "âœ–";
+  content: "✖";
 }
 </style>
 </head>
@@ -177,10 +177,10 @@ span.psw {
 
 	<div id="id01" class="modal">
  
-	<form class="modal-content animate" action="/action_page.php" method="post">
+	<form class="modal-content animate" action="dashboard.html" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="Login 1.jfif" alt="Avatar" class="avatar">
+      <img src="login 1.jfif" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">
@@ -198,7 +198,7 @@ span.psw {
       <br>
       <br>
       <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-
+      
       <button onclick="document.getElementById('psw').value = ''" 
 		onclick=""document.getElementById('psw').style.display='block'" style="width:auto;">Clear</button>
 
@@ -223,6 +223,10 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+function document.getElementById() {
+   document.location.href = "kmedoid.html";
+ }
 </script>
 
 
