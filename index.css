@@ -24,9 +24,13 @@
   
     
   }
-  img{
+  .logo img{
     border-radius: 50%;
   }
+  #footer img{
+    border-radius: 50%;
+  }
+  
   .nav{
       float:right;
   }

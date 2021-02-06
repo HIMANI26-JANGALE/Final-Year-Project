@@ -1,7 +1,8 @@
 <html>
 <head>
-    <link rel="stylesheet" href="hierarchical.css">
-
+    <link rel="stylesheet" href="algorithm.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="index.css">
     <script type="text/javascript">
       function goToNewPage()
       {
@@ -12,14 +13,42 @@
       }
   </script>
 </head>
-<body>
+
   <body background="p1.jpg">
+    <header>
+      <div class="main-nav">
+        <div class="logo"><a href="dashboard.html"><img src="logo.jpg" height="50px" width="60px"></a></div>
+        <div class="nav">
+          <ul>
+            <li class="active"><a>Algorithm</a>
+              <ul>
+                <li><a href="kmeans.html">Incremental K-means</a></li>
+                <li><a href="hierarchical.html">Hierachical </a></li>
+                <li><a href="dbscan.html">DBSCAN </a></li>
+                <li><a href="kmedoid.html">K-medoids </a></li>
+              </ul>
+            </li>
+  
+            <li class="active"><a href="Analysis.html">Analysis</a></li>
+            <li class="active"><a href="weather-forecasting.html">Weather forecasting</a></li>
+            <li class="active"><a href="index.html">Log-Out</a></li>
+          </ul>
+        </div>
+  
+      </div>
+  
+  
+    </header>
+    <div class="algo-container"> 
 <h1><u>Hierarchical Clustering algorithm </u></h1>
+<br>
 <b>
 <p>       Hierarchical clustering, also known as hierarchical cluster analysis, is an algorithm that groups similar objects into groups called clusters. The endpoint is a set of clusters, where each cluster is distinct from each other cluster, and the objects within each cluster are broadly similar to each other.
 </p>
 <p>Hierarchical clustering can be performed with either a distance matrix or raw data. When raw data is provided, the software will automatically compute a distance matrix in the background. The distance matrix below shows the distance between six objects.</p>
+<br>
 <h3>Finding hierarchical clusters</h3>
+<br>
 <p>There are two top-level methods for finding these hierarchical clusters:</p>
 <ul>
     <b>
@@ -27,7 +56,9 @@
     <li>Divisive clustering uses a top-down approach, wherein all data points start in the same cluster. You can then use a parametric clustering algorithm like K-Means to divide the cluster into two clusters. For each cluster, you further divide it down to two clusters until you hit the desired number of clusters.</li>
     </b>
 </ul>
+<br>
 <h3>Applications of Hierarchical Clustering</h3>
+<br>
 <ul>
     <b>
         <li>US Senator Clustering through Twitter</li>
@@ -35,47 +66,31 @@
         <li>Tracking Viruses through Phylogenetic Trees</li>
     </b>
 </ul>
+<br>
 <center>
   
-  </style>
-  </head>
-  <body>
-    </head>
+  
+  
     <h3><b>Select the value of cluters to see the output</b></h3>
-    <body>
+    <br>
       <form>
         <select name="list" id="list" accesskey="target">
             <option value='none' selected>Number of cluster</option>
-            <option value="h1.html">1</option>
-            <option value="h2.html">2</option>
-            <option value="h3.html">3</option>
+            <option value="hierarchical_c1.html">1</option>
+            <option value="hierarchical_c2.html">2</option>
+            <option value="hierarchical_c3.html">3</option>
         </select>
         <input type=button class="button button2"value="Go" onclick="goToNewPage()" />
         </form>
       <button class="button button1" onclick="myclick()">Execution Time</button>
+    </b>
+    </div>
       <script>
         function myclick(){
-          document.location.href="exe h.html";
+          document.location.href="hierarchical_execution.html";
         }
       </script>
-      <style>
-        .button {
-          border: none;
-          color: white;
-          padding: 15px 32px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 16px;
-          margin: 4px 2px;
-          cursor: pointer;
-        } 
-        .button1 {width: 250px;}
-        .button2 {border-radius: 4px;}
-        .button1 {background-color: #4CAF50;} /* Green */
-        .button2 {background-color: #008CBA;} /* Blue */
-        </style>
-        </head>
+      
         
     </center>    
   
