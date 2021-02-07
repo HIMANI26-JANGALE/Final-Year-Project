@@ -6,7 +6,7 @@ h1{
 }
 .table{
     margin-top: 40px;
-    margin-left: 50%;
+    margin-left: 55%;
     position: absolute;
 }
 .graph-container{
@@ -19,11 +19,11 @@ h1{
    
 }
 .table-info h3{
-    font-size: 21px;
+    font-size: 1.3rem;
 }
 .table-info ul li{
     padding-top: 10px;
-    font-size: 19px;
+    font-size: 1.1rem;
 }
 .column {
     float: left;
