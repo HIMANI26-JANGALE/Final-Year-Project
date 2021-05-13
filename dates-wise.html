@@ -6,14 +6,6 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-responsive.css">
     <title>Weather Forecasting</title>
-    <script type="text/javascript">
-        function goToNewPage() {
-            var url = document.getElementById('list').value;
-            if (url != 'none') {
-                window.location = url;
-            }
-        }
-    </script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="dashboard.css">
     <link rel="stylesheet" href="dates-wise.css">
@@ -60,26 +52,51 @@
 
     </header>
     <div class="dash-banner-weather">
-    <marquee style="margin-top: 80px;color:yellow; font-size: 20px;">You can predict the weather for coming 3
-        Days</marquee>
+        <marquee style="margin-top: 80px;color:yellow; font-size: 20px;">You can predict the weather for coming 3
+            Days</marquee>
 
-    
+
 
         <div class="form-section">
             <center>
                 <form>
                     <label>Select the date :</label>
-                    <select name="list" id="list" accesskey="target">
+
+
+                    <select id="name">
                         <option value='none' selected>--Select--</option>
-                        <option value="">13-05-2021</option>
-                        <option value="">14-05-2021</option>
-                        <option value="">15-05-2021</option>
+                        <option value="1">13-05-2021</option>
+                        <option value="2">14-05-2021</option>
+                        <option value="3">15-05-2021</option>
                     </select>
-                    <input type=button class="button button2" value="Go" onclick="goToNewPage()" />
+                    <div class="content">
+                        <div id="1" class="data">
+                            <p class="image1"><img src="logo.jpg" height="220px" width="220px"></p>
+                            <p class="image2"><img src="logo.jpg" height="220px" width="220px"></p>
+                        </div>
+                        <div id="2" class="data">
+                            <p class="image1"><img src="login.jpg" height="220px" width="220px"></p>
+                            <p class="image2"><img src="login.jpg" height="220px" width="220px"></p>
+                        </div>
+                        <div id="3" class="data">
+                            <p class="image1"><img src="p1.jpg" height="220px" width="220px"></p>
+                            <p class="image2"><img src="p1.jpg" height="220px" width="220px"></p>
+                        </div>
+
+                    </div>
                 </form>
             </center>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#name").on('change', function () {
+                $(".data").hide();
+                $("#" + $(this).val()).fadeIn(700);
+            }).change();
+        });
+    </script>
 </body>
 
 </html>
