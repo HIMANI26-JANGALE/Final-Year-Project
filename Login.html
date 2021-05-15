@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <title>Login Page</title>
+<title>Login Page</title>
+
 <head>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,55 +21,46 @@
       </div>
     </div>
   </header>
-  <br><br><br><br><br>
-  <div class="login-container">
-    <h1>Login Form</h1>
-    <br>
-    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-  </div>
+  <div class="login-background">
+    <br><br><br>
+      <form class="modal-content animate" action="dashboard.html" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+          <img src="login 1.jfif" alt="Avatar" class="avatar">
+        </div>
 
-  <div class="login-image-container">
-    <img src="login.jpg" height="600" width="600">
-  </div>
-  <div id="id01" class="modal">
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
 
-    <form class="modal-content animate" action="dashboard.html" method="post">
-      <div class="imgcontainer">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close"
-          title="Close Modal">&times;</span>
-        <img src="login 1.jfif" alt="Avatar" class="avatar">
-      </div>
-
-      <div class="container">
-        <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
-
-        <label for="psw"><b>Password</b></label>
+          <label for="psw"><b>Password</b></label>
 
 
-        <input type="password" placeholder="Enter Password" id="psw" name="psw"
-          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-          title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-          required>
-        <br><label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-        <br>
-        <br>
-        <br>
-        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+          <input type="password" placeholder="Enter Password" id="psw" name="psw"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+            required>
+          <br><label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+          <br>
+          <br>
+          <br>
+          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
-        <button onclick="document.getElementById('psw').value = ''" onclick=""
-          document.getElementById('psw').style.display='block'" style=" width:auto;">Clear</button>
+          <button onclick="document.getElementById('psw').value = ''" onclick=""
+            document.getElementById('psw').style.display='block'" style=" width:auto;">Clear</button>
 
 
-      </div>
+        </div>
 
-      <div class="container" style="background-color:#b9b3b3">
-        <span class="psw">Forgot <a href="#">password?</a></span>
-      </div>
-    </form>
+        <div class="container" style="background-color:#b9b3b3">
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
 
+    </div>
   </div>
 
 

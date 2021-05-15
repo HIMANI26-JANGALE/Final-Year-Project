@@ -112,7 +112,7 @@
 
 .info-container{
 	position: absolute;
-	top:125%;
+	top:135%;
 	left:50%;
 	transform:translate(-50%,-50%);
 	width:600px;
@@ -146,11 +146,11 @@
   margin :0 0 20px;
   color: white;
 	padding:0;
-	font-size:30px;
+	font-size:2rem;
 }
 #footer
 {
-  margin-top: 650px;
+  margin-top: 60%;
 	background:#f8f9fd;
 	padding:20px 10px 8px;
 }
@@ -169,6 +169,80 @@
 }
 .finalgraph img{
   height: 500px;
+}
+@media screen and (max-width: 1024px) {
+  .banner h1{
+    font-size:2.2rem;
+  }
+  .banner p{
+    font-size: 1.4rem;
+  }
+  .info-container{
+    top: 140%;
+    width: 500px;
+  }
+  .info-container h1{
+    font-size:1.5rem;
+  }
+  .info-container p{
+    font-size: 1.0rem;
+  }
+
+  #footer{
+    margin-top: 110%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .banner h1{
+    font-size:2.0rem;
+  }
+  .banner p{
+    font-size: 1.4rem;
+  }
+  .circle{
+    width: 220px;
+	  height:220px;
+    
+  }
+  .info-container{
+    top: 160%;
+    width: 350px;
+  }
+  .info-container h1{
+    font-size:1.2rem;
+  }
+  .info-container p{
+    font-size: 0.9rem;
+  }
+  #footer{
+    margin-top: 200%;
+}
+
+@media screen and (max-width: 500px) {
+  .banner h1{
+    font-size:2.0rem;
+  }
+  .banner p{
+    font-size: 1.4rem;
+  }
+  .circle{
+    width: 220px;
+	  height:220px;
+    
+  }
+  .info-container{
+    top: 160%;
+    width: 310px;
+  }
+  .info-container h1{
+    font-size:1.2rem;
+  }
+  .info-container p{
+    font-size: 0.9rem;
+  }
+  #footer{
+    margin-top: 270%;
+  }
 }
 
 

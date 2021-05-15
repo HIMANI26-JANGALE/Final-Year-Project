@@ -25,6 +25,13 @@ button {
 button:hover {
   opacity: 0.8;
 }
+.login-background{
+  height:100vh;
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(login.jpg);
+	background-size:cover;
+	background-position:center;
+	color:white;
+}
 
 /* Extra styles for the cancel button */
 .cancelbtn {
@@ -117,13 +124,31 @@ span.psw {
 }
 
 /* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 500px) {
   span.psw {
      display: block;
      float: none;
   }
   .cancelbtn {
      width: 100%;
+  }
+  .imgcontainer {
+    text-align: center;
+    margin: 12px 0 08px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 20%;
+    border-radius: 100%;
+  }
+  
+  .container {
+    padding: 22px;
+  }
+
+  .modal-content {
+    width: 60%; /* Could be more or less, depending on screen size */
   }
 }
 /* The message box is shown when the user clicks on the password field */
@@ -162,3 +187,5 @@ span.psw {
   left: -35px;
   content: "✖";
 }
+
+

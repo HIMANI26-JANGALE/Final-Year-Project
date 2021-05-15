@@ -10,7 +10,9 @@ input:valid{
     border:2px solid rgb(123, 240, 7);
 }
 
-
+.full-container{
+    width:453px;
+}
 
 
 .login-box{
@@ -48,7 +50,7 @@ input:valid{
 }
 .upper-box h2{
     margin-top: -12.999%;
-    font-size:22px ;
+    font-size:1.8rem ;
     text-align: left;
     margin-left:38%;
     color:maroon;
@@ -82,7 +84,7 @@ input:valid{
         margin-top: 3px;
         margin-bottom: 1px;
         padding-left: 2px;
-        font-size: 17px;
+        font-size: 1.5rem;
         font-weight: bold;
  }
     
@@ -196,5 +198,21 @@ h2:hover{
     color:#FFFFFF;
     text-decoration: none;
     display: block;
+}
+
+@media screen and (max-width: 500px) {
+    .full-container{
+        width:300px;
+    }
+    .login-box{
+        width:300px;
+    }
+    .upper-box{
+        width:300px;
+    }
+    .upper-box h2{
+
+    }
+        
 }
 
